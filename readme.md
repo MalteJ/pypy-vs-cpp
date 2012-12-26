@@ -51,3 +51,52 @@ real	0m2.427s
 user	0m2.348s
 sys	0m0.068s
 ```
+
+## run3.sh
+```
+$ ./run3.sh 
++ g++ test3.cpp -o cpp-test3
++ scalac test3.scala
++ pypy test3.py
+looping 500000000 times
+counter = 500000000
+
+real	0m9.073s
+user	0m9.033s
+sys	0m0.016s
++ ./cpp-test3
+looping 500000000 times
+counter = 500000000
+
+real	0m20.110s
+user	0m20.065s
+sys	0m0.000s
++ scala test3
+looping 500000000 times
+counter = 500000000
+
+real	0m1.193s
+user	0m1.180s
+sys	0m0.052s
+```
+
+## fib.sh
+```
+$ ./fib.sh 
++ g++ fib.cpp -o cpp-fib
++ python fib.py
+
+real	1m32.827s
+user	1m32.634s
+sys	0m0.004s
++ pypy fib.py
+
+real	0m23.771s
+user	0m23.629s
+sys	0m0.072s
++ ./cpp-fib
+
+real	0m2.581s
+user	0m2.572s
+sys	0m0.000s
+```
