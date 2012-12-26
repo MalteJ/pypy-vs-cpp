@@ -1,5 +1,7 @@
 cpp-test
 cpp-test2
+cpp-fib
 *.swp
 *.swo
 *~
+*.class
